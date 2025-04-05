@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+/* CSS Variables */
+
+:root{
+    --nav-link-primary-colour: #030829;
+    --nav-link-hover-colour:  #268908;
+}
+
+#main-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-bar {
+    flex: 1;
+}
+
+#nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#nav-bar li {
+    font-family: 'Italianno', cursive;
+    font-size: 24pt;
+    padding-left: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--nav-link-primary-colour);
+}
+
+.nav-link:hover {
+    color: var(--nav-link-hover-colour)
+}
