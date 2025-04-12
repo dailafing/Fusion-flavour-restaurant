@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     max-width: 1044px;
     margin: 0 auto;
-    margin-top: 140px;
+    /* margin-top: 140px; */
 }
 
 main {
@@ -42,7 +42,7 @@ main {
 }
 
 #main-header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -201,6 +201,7 @@ ul{
     justify-content: center;
     gap: 15px;
     margin-bottom: 100px;
+    margin-top: 40px;
 }
 
 .grid-image {
@@ -248,6 +249,99 @@ ul{
 }
 
 
+
+
+
+/* ******************************************************** */
+/* Contact Form Styling */
+
+#info-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#left-side, #right-side {
+    flex: 1;
+    min-width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f5f5ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-input label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.form-input input,
+.form-input select,
+.form-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.form-input textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#right-side h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#right-side p {
+    margin: 4px 0;
+    font-size: 16px;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
 /* ******************************************************** */
 /* Mobile Responsivity */
 
@@ -278,13 +372,20 @@ ul{
         width: 45%;
     }
 
+    #info-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
   }
 
   @media screen and (max-width: 555px) {
     body {
         background-color: rgb(252, 230, 229);
-        padding-top: 100px; /* Makes space for fixed header */
-        margin: 0;
     }
 
     h1 {

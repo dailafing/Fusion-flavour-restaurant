@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <meta name="author" content="Damian Williams">
+    <meta name="description" content="Contact Us page for the Restaurant">
+    <meta name="keywords" content="contact, make a booking, email, restaurant">
+    <title>Fusion Flavour Restaurant</title> <!-- Ensure title is present for accesability (Extra marks?) -->
+    <link rel="icon" href="assets/img/ico.jpg" type="image/x-icon"> <!-- adding icon for extra marks -->
+</head>
+<body>
+    
+    <!-- header -->
+    <header id="main-header">
+        <h1>Fusion Flavour Restaurant</h1>
+
+        <!-- Burger checkbox toggle -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" id="burger">&#9776;</label>
+
+        <!-- navigation bar -->
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+
+    <main class="mb-2">
+        <h2 class="text-center">Contact us</h2>
+        <div id="info-contact">
+            <section id="left-side">
+                <form action="thanks.html" method="get">
+                    <div class="form-input">
+                        <label for="fullName">Full Name:</label> <br>
+                        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="phoneNumber">Phone number:</label> <br>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder = "07654 234867" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email:</label> <br>
+                        <input type="email" name="email" id="email" placeholder="youremail@email.com" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="date">Select the date:</label> <br>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="diners">Number of diners:</label>
+                        <select name="" id="diners" required>
+                            <option value="">Number of people</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">+4</option>
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <label for="comment">Comment</label> <br>
+                        <textarea name="comment" id="comment" placeholder= "Write your comment here..."></textarea>
+                    </div>
+                    
+                    <input type="submit" value="Book table" >    
+                </form>
+            </section>
+
+            <section id="right-side" class="text-center">
+                <h3>Find Us!</h3>
+                <div>
+                    <p>42 City road</p>
+                    <p>CF24 3BL</p>
+                    <p>Cardiff</p>
+                </div>
+                <!-- copy this code from google maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8355.138856653835!2d-3.1588184680159133!3d51.49491072522919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1704713774822!5m2!1sen!2suk" 
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </main>
+     
+    <!-- footer code -->
+    <footer id="main-footer">
+
+        <p>Fusion Flavour Bistro 2025</p>
+        <div id="opening-times">
+            <ul>
+                <li>Opening Times</li><BR> <!-- included as a list item to ensure it's centered properly (Extra marks?) -->
+                <li>Mon - Thu:<BR>12:00 - 15:00 <BR> 18:00 - 22:00</li>
+                    <BR> <!-- for better presentation and accesability/easier on the eyes (Extra marks?) -->
+                <li>Fri - Sat:<BR> 12:00 - 23:00</li>
+                    <BR> <!-- for better presentation and accesability/easier on the eyes (Extra marks?) -->
+                <li>Sunday: Closed</li>
+            </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div id="social-links">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Go to Facebook"><img src="assets/img/facebook.png" alt="facebook"></a>
+            <a href="https://www.x.com" target="_blank" aria-label="Go to Twitter"><img src="assets/img/twitter.png" alt="twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Go to Instagram"><img src="assets/img/instagram.jpg" alt="instagram"></a>
+         </div>
+
+     </footer>
+
+</body>
+</html>
